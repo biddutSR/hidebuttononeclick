@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Disable button using disabled property</title>
+</head>
+<body>
+    <!-- <p>Click the button to submit data!</p> -->
+    <p>
+    	<input type='submit' value='Submit' id='btClickMe' 
+            onclick='save(); this.disabled = true;' />
+    </p>
+    <p id="msg"></p>
+</body>
+<script>
+    function save() {
+        var msg = document.getElementById('msg');
+        // msg.innerHTML = 'Data submitted and the button disabled &#9786;';
+    }
+</script>
+</html>
